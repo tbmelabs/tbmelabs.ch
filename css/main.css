@@ -20,19 +20,19 @@ Version: 1.0.0
  *         2.2.3.Countdown
  *         2.2.4.Intro Sub Heading
  *         2.2.5.Trigger Button with SVG
- *         2.2.6.Social Links                
+ *         2.2.6.Social Links
  *         3.Trigger After Content
  *         3.1.Trigger Notify
  *         3.2.Our Service
  *         3.3.Our Awesome Team
  *         3.4.Contact Form
  *         3.5.Google Map
- *         3.6.Footer         
+ *         3.6.Footer
  *     #Helper classes
  *     #Responsive Style
  *     #Screen loader
  *     #Preloader
- *    
+ *
  * ============================================================================
  */
 /* ==========================================================================
@@ -101,11 +101,11 @@ textarea { resize: vertical }
     color: #000;
     padding: 0.2em 0;
 }
-/* 
+/*
 * ==========================================================================
    Author's custom styles
   ================= 1.Author Custom Global Style ===========================
-* ========================================================================== 
+* ==========================================================================
 */
 @font-face {
     font-family: 'BeonMedium';
@@ -221,7 +221,7 @@ p {
 .margin-top-x { margin-top: 20px }
 .margin-btm-2x { margin-bottom: 60px }
 .margin-btm-x { margin-bottom: 20px }
-/* 
+/*
 * ==========================================================================
     =========+++++++++++++++ 2.Intro Section +++++++++++++++=============
 * ==========================================================================
@@ -254,10 +254,10 @@ p {
     -webkit-transform: translate3d(0, -100%, 0) translate3d(0, 200px, 0);
     transform: translate3d(0, -100%, 0) translate3d(0, 200px, 0);
 }
-/* 
+/*
 * ==========================================================================
         2.1.FullScreen Image
-* ========================================================================== 
+* ==========================================================================
 */
 .intro-image {
     background-color: rgba(0,0,0,0.7);
@@ -279,10 +279,10 @@ p {
     -webkit-transform: translate3d(0, 20%, 0);
     transform: translate3d(0, 20%, 0);
 }
-/* 
+/*
 * ==========================================================================
                 +++++++++++++++ 2.2.Intro Content +++++++++++++++
-* ========================================================================== 
+* ==========================================================================
 */
 .intro-content {
     display: table-cell;
@@ -293,7 +293,7 @@ p {
     min-height: 100%;
     vertical-align: middle;
 }
-/* 
+/*
 * ==========================================================================
         2.2.1.Logo
 * ==========================================================================
@@ -312,10 +312,10 @@ p {
     font-weight: bold;
     font-size: 3em;
 }
-/* 
+/*
 * ==========================================================================
         2.2.2.Intro Main Heading
-* ========================================================================== 
+* ==========================================================================
 */
 .intro-title {
     font-family: latobold;
@@ -325,10 +325,16 @@ p {
     text-transform: uppercase;
 }
 .obak { color: #2098f5 }
-/* 
+
+.obak:hover { color: white; }
+
+.obak:active { color: white; }
+
+.obak:after { color: white; }
+/*
 * ==========================================================================
         2.2.3.Countdown
-* ========================================================================== 
+* ==========================================================================
 */
 .countdown {
     list-style: none;
@@ -360,10 +366,10 @@ a {
 }
 a:hover { text-decoration: underline }
 .content-div { width: 100% }
-/* 
+/*
 * ==========================================================================
         2.2.4.Intro Sub Heading
-* ========================================================================== 
+* ==========================================================================
 */
 .intro-subtitle {
     display: block;
@@ -376,10 +382,10 @@ a:hover { text-decoration: underline }
     margin: 0 auto 0 1em;
     line-height: 1.2;
 }
-/* 
+/*
 * ==========================================================================
         2.2.5.Trigger Button with SVG
-* ========================================================================== 
+* ==========================================================================
 */
 .trigger {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
@@ -423,10 +429,10 @@ a:hover { text-decoration: underline }
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
 }
-/* 
+/*
 * ==========================================================================
         2.2.6.Social Links
-* ========================================================================== 
+* ==========================================================================
 */
 .social {
     bottom: 0;
@@ -434,6 +440,7 @@ a:hover { text-decoration: underline }
     margin: 10px;
     position: absolute;
 }
+
 .fa-social {
     background: #2098f5;
     border: 0px solid #2098f5;
@@ -447,10 +454,10 @@ a:hover { text-decoration: underline }
     color: #2098f5;
     background: #fff;
 }
-/* 
+/*
 * ==========================================================================
 *     =======+++++++++++++++ 3.Trigger After Content +++++++++++++++========
-* ========================================================================== 
+* ==========================================================================
 */
 .content-wrapper {
     position: relative;
@@ -478,10 +485,10 @@ a:hover { text-decoration: underline }
     pointer-events: none;
 }
 .container-open .content-wrapper::after { opacity: 0 }
-/* 
+/*
 * ==========================================================================
         3.1.Trigger Notify
-* ========================================================================== 
+* ==========================================================================
 */
 .container-open .center-content { opacity: 0 }
 .notify-after { visibility: hidden }
@@ -516,10 +523,10 @@ a:hover { text-decoration: underline }
     color: #fff;
     border-color: #2098f5;
 }
-/* 
+/*
 * ==========================================================================
         3.2.Our Service
-* ========================================================================== 
+* ==========================================================================
 */
 .fa-service {
     border: 1px solid #2098f5;
@@ -533,10 +540,10 @@ a:hover { text-decoration: underline }
 .service-title { color: #2098f5 }
 .fa-mbr { padding: 0 5px }
 .fa-mbr:hover { color: #31B0E0 }
-/* 
+/*
 * ==========================================================================
         3.3.Our Awesome Team
-* ========================================================================== 
+* ==========================================================================
 */
 .team-member {
     background: #fff;
@@ -558,10 +565,10 @@ a:hover { text-decoration: underline }
     border-radius: 50%;
     overflow: hidden;
 }
-/* 
+/*
 * ==========================================================================
         3.4.Contact Form
-* ========================================================================== 
+* ==========================================================================
 */
 .contact {
     background-color: #2098f5;
@@ -667,16 +674,16 @@ a:hover { text-decoration: underline }
     border: 1px solid #fff;
     background-color: transparent;
 }
-/* 
+/*
 * ==========================================================================
         3.5.Google Map
-* ========================================================================== 
+* ==========================================================================
 */
 #map-wrapper { height: 440px }
-/* 
+/*
 * ==========================================================================
         3.6.Footer
-* ========================================================================== 
+* ==========================================================================
 */
 #footer {
     background-color: #2098f5;
@@ -689,10 +696,10 @@ a:hover { text-decoration: underline }
     padding-top: 25px;
     font-size: 1.1em;
 }
-/* 
+/*
 * ==========================================================================
        Helper classes
-* ========================================================================== 
+* ==========================================================================
 */
 /*
  * Hide visually and from screen readers:
@@ -751,16 +758,16 @@ a:hover { text-decoration: underline }
     display: table; /* 2 */
 }
 .clearfix:after { clear: both }
-/* 
+/*
 * ==========================================================================
     Responsive Design
-* ========================================================================== 
+* ==========================================================================
 */
-@media only screen and (max-width: 767px) { 
+@media only screen and (max-width: 767px) {
     .text-justify { text-align: center }
 }
 
-@media only screen and (max-width: 480px) { 
+@media only screen and (max-width: 480px) {
     /* body{background:#69C238} */
     .intro { position: absolute }
     .logo { margin: -55px 0 25px }
@@ -788,7 +795,7 @@ a:hover { text-decoration: underline }
     }
     .notify-after .form-group { float: left }
 }
-@media only screen and (max-width: 304px) { 
+@media only screen and (max-width: 304px) {
     /* body{background:#69C238} */
     .intro { position: absolute }
     .container-open .notify-after {
@@ -796,7 +803,7 @@ a:hover { text-decoration: underline }
         left: 5%;
     }
 }
-@media only screen and (max-width: 320px) { 
+@media only screen and (max-width: 320px) {
     .intro { position: absolute }
     .text-logo {
         font-size: 3em;
@@ -822,7 +829,7 @@ a:hover { text-decoration: underline }
     }
     .notify-after .form-group { float: left }
 }
-@media only screen and (min-width: 238px) and (max-width: 319px) { 
+@media only screen and (min-width: 238px) and (max-width: 319px) {
     .intro { position: absolute }
     .logo { margin: -60px 0 25px }
     .text-logo { margin: -60px 0 0 }
@@ -852,7 +859,7 @@ a:hover { text-decoration: underline }
     }
     .notify-after .form-group { float: left }
 }
-@media only screen and (min-width: 481px) and (max-width: 568px) { 
+@media only screen and (min-width: 481px) and (max-width: 568px) {
     .intro { position: absolute }
     .intro-content { padding: 2% }
     .logo { margin: -45px 0 25px;}
@@ -881,7 +888,7 @@ a:hover { text-decoration: underline }
     }
     .notify-after .form-group { float: left }
 }
-@media only screen and (min-width: 569px) and (max-width: 736px) { 
+@media only screen and (min-width: 569px) and (max-width: 736px) {
     .intro { position: absolute }
     .logo { margin: 0 0 20px }
     .text-logo { margin: -60px 0 0 }
@@ -908,23 +915,23 @@ a:hover { text-decoration: underline }
     }
     .notify-after .form-group { float: left }
 }
-@media only screen and (min-width: 768px) and (max-width:991px) { 
+@media only screen and (min-width: 768px) and (max-width:991px) {
     .intro-title { font-size: 3em }
     .container-open .notify-after { left: 34% }
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) { 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
     .container-open .notify-after { left: 39% }
 }
-@media (min-width: 1200px) { 
-    
+@media (min-width: 1200px) {
+
 }
-@media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) { 
+@media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
-/* 
+/*
 * ==========================================================================
     Screen Loader
-* ========================================================================== 
+* ==========================================================================
 */
 .screen-loader {
     position: fixed;
@@ -936,10 +943,10 @@ a:hover { text-decoration: underline }
     background: #fff url(../img/Preloader.gif) no-repeat center center;
     z-index: 10000;
 }
-/* 
+/*
 * ==========================================================================
     Preloader
-* ========================================================================== 
+* ==========================================================================
 */
 #preload {
     position: fixed;
@@ -1010,7 +1017,7 @@ a:hover { text-decoration: underline }
    Inlined to avoid the additional HTTP request:
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
-@media print { 
+@media print {
     *,
     *:before,
     *:after {
