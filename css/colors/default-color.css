@@ -2,45 +2,45 @@
 /* CSS Document */
 
 .text-logo {
-	color: #00cc66;
+	color: #ff6900;
 }
 .intro-tile {
 	color: red;
 }
 .obak {
-  color: #00cc66;
+  color: #ff6900;
 }
 .md-overlay {
-  background: none repeat scroll 0 0 rgba(0, 204, 102, 0.3);
+  background: none repeat scroll 0 0 rgba(255, 105, 0, 0.3);
 }
 .fa-social {
-  background: none repeat scroll 0 0 #00cc66;
+  background: none repeat scroll 0 0 #ff6900;
 }
 .icon rect, .icon line {
-  fill: #00cc66;
-  stroke: #00cc66;
+  fill: #ff6900;
+  stroke: #ff6900;
 }
 .title {
-  color: #00cc66;
+  color: #ff6900;
 }
 .contact-title {
   color: #ffffff;
 }
 .service-top {
-	color: #00cc66;
+	color: #ff6900;
 }
 .service-bottom {
-	color: #00cc66;
+	color: #ff6900;
 }
 .fa-service {
-	color: #00cc66;
-	border: 1px solid #00cc66;
+	color: #ff6900;
+	border: 1px solid #ff6900;
 }
 .contact {
-  background-color: #00cc66;
+  background-color: #ff6900;
 }
 #footer {
-  background-color: #00cc66;
+  background-color: #ff6900;
 }
 .btn-contact {
   background-color: transparent;
@@ -49,11 +49,11 @@
 
 
 .fa-sliders {
-  color: #00cc66;
+  color: #ff6900;
 }
 .color-option-title {
-  color: #00cc66;
+  color: #ff6900;
 }
-.green {
-  background: #00cc66;
+.orange {
+  background: #ff6900;
 }
