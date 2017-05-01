@@ -71,6 +71,14 @@ aside {
     padding: 0;
 }
 
+.less-padding {
+  padding: 10px 0;
+}
+
+.no-padding-bottom {
+  padding-bottom: 0px;
+}
+
 // Navigation
 
 .navbar-default {
@@ -165,7 +173,14 @@ header {
     min-height: auto;
     .background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    background:
+      /* top, transparent black, faked with gradient */
+      linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      /* bottom, image */
+      url('../img/header.jpg');
     text-align: center;
     color: white;
     .header-content {
