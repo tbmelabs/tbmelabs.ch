@@ -8,7 +8,8 @@
     "toTop": "Startseite",
     "about": "&Uuml;ber Uns",
     "services": "Service",
-    "portfolio": "Portfolio"
+    "portfolio": "Portfolio",
+    "team": "Team"
   },
   "about": {
     "heading": "&Uuml;ber das Start-Up",
@@ -45,20 +46,37 @@
     "selection": [
       {
         "link": "https://homoeopathie-eggmann.ch",
-        "thumbnail": "homoeopathie-eggmann.jpg"
+        "thumbnail": "portfolio/homoeopathie-eggmann.jpg"
       },
       {
         "link": "https://einfachspielen.ch",
-        "thumbnail": "einfachspielen.jpg"
+        "thumbnail": "portfolio/einfachspielen.jpg"
       },
       {
         "link": "https://mirioeggmann.ch",
-        "thumbnail": "mirioeggmann.jpg"
+        "thumbnail": "portfolio/mirioeggmann.jpg"
       }
     ]
   },
   "openSourceProjects": {
     "heading": "Unsere Open-Sourced Projekte k&ouml;nnen auf GitHub gefunden werden!",
     "linkText": "Sehen Sie sich die GitHub Projekte an"
+  },
+  "team": {
+    "heading": "Team",
+    "members": [
+      {
+        "name": "Mirio Eggmann",
+        "title": "Gründer & Entwickler",
+        "thumbnail": "team/mirio_eggmann.jpg",
+        "githubLink": "https://github.com/mirioeggmann"
+      },
+      {
+        "name": "Timon Borter",
+        "title": "Gründer & Entwickler",
+        "thumbnail": "team/timon_borter.jpg",
+        "githubLink": "https://github.com/bbortt"
+      }
+    ]
   }
 }

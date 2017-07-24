@@ -37,7 +37,7 @@ class Portfolio extends React.Component {
                 return (
                   <Col lg={4} md={6} sm={12}>
                     <a href={example.link} target='_blank'>
-                      <Image src={'public/' + require('../../images/portfolio/' + example.thumbnail)} thumbnail
+                      <Image src={'public/' + require('../../images/' + example.thumbnail)} thumbnail
                              responsive/>
                     </a>
                   </Col>
