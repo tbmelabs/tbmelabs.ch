@@ -13,11 +13,11 @@ require('bootstrap/dist/css/bootstrap.css');
 
 class About extends React.Component {
   render() {
-    const {about}=this.props.texts;
+    const {about} = this.props.texts;
 
     return (
       <Section id='about'>
-        <Grid className='text-center'>
+        <Grid>
           <Row>
             <Col lg={8} lgOffset={2}>
               <h2>{about.heading}</h2>

@@ -9,7 +9,7 @@ class Section extends React.Component {
 
     return (
       <section id={id} className={sectionClass}>
-        <div className='container'>
+        <div className='container text-center'>
           {this.props.children}
         </div>
       </section>

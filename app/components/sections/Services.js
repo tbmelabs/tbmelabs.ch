@@ -18,7 +18,7 @@ class Services extends React.Component {
 
     return (
       <Section id='services'>
-        <Grid className='text-center'>
+        <Grid>
           <Row>
             <Col lg={12}>
               <h2>{services.heading}</h2>

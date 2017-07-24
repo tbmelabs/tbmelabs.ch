@@ -15,7 +15,7 @@ class Header extends React.Component {
     const {header} = this.props.texts;
 
     return (
-      <header>
+      <header className='text-center'>
         <PageHeader>TBME Labs</PageHeader>
         <p>
           {header.slogan}

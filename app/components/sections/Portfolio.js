@@ -13,11 +13,11 @@ require('bootstrap/dist/css/bootstrap.css');
 
 class Portfolio extends React.Component {
   render() {
-    const {portfolio} =this.props.texts;
+    const {portfolio} = this.props.texts;
 
     return (
       <Section id='portfolio'>
-        <Grid className='text-center'>
+        <Grid>
           <Row>
             <Col lg={12}>
               <h2>{portfolio.heading}</h2>
