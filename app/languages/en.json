@@ -6,10 +6,36 @@
   },
   "navigation": {
     "toTop": "Home",
-    "about": "About Us"
+    "about": "About Us",
+    "services": "Services"
   },
   "about": {
     "heading": "About Our Agency",
     "text": "TBME Labs is a web design & development start-up run by two computer science students who really like creating stuff. We are constantly educating ourself to be able to work with the newest technologies on the market. Since we are still students we can offer state of the art products for very attractive prices."
+  },
+  "services": {
+    "heading": "Services",
+    "offers": [
+      {
+        "glyphicon": "signal",
+        "heading": "State Of The Art",
+        "text": "The websites are created with state of the art technologies."
+      },
+      {
+        "glyphicon": "cog",
+        "heading": "All In One",
+        "text": "Design, development, hosting and support: We offer all in one."
+      },
+      {
+        "glyphicon": "road",
+        "heading": "Maintenance",
+        "text": "We offer to update and maintain your website."
+      },
+      {
+        "glyphicon": "heart",
+        "heading": "Built With Love",
+        "text": "All our websites are unique and adapted to the wishes of the clients."
+      }
+    ]
   }
 }

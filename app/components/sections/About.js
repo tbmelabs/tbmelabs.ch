@@ -17,9 +17,9 @@ class About extends React.Component {
 
     return (
       <Section id='about'>
-        <Grid>
+        <Grid className='text-center'>
           <Row>
-            <Col lg={8} className='text-center'>
+            <Col lg={8} lgOffset={2}>
               <h2>{about.heading}</h2>
               <hr/>
               <p>{about.text}</p>

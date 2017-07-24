@@ -8,6 +8,7 @@ import {connect} from 'react-redux';
 import Header from '../components/Header';
 import Navigation from '../components/Navigation';
 import About from '../components/sections/About';
+import Services from '../components/sections/Services';
 import Footer from '../components/Footer';
 
 class Home extends React.Component {
@@ -20,6 +21,7 @@ class Home extends React.Component {
         <Header texts={texts}/>
 
         <About texts={texts}/>
+        <Services texts={texts}/>
 
         <Footer/>
       </app>

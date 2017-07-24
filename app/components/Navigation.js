@@ -33,6 +33,9 @@ class Navigation extends React.Component {
               <LinkContainer className='page-scroll' to='#about'>
                 <NavItem>{navigation.about}</NavItem>
               </LinkContainer>
+              <LinkContainer className='page-scroll' to='#services'>
+                <NavItem>{navigation.services}</NavItem>
+              </LinkContainer>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

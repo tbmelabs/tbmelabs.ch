@@ -6,10 +6,36 @@
   },
   "navigation": {
     "toTop": "Startseite",
-    "about": "&Uuml;ber Uns"
+    "about": "&Uuml;ber Uns",
+    "services": "Service"
   },
   "about": {
     "heading": "&Uuml;ber das Start-Up",
     "text": "TBME Labs ist ein Web Design und Entwicklungs Start-Up, gef&uuml;hrt von zwei Informatiklernenden. Wir m&ouml;gen es, neue Sachen zu entdecken! St&auml;ndig informieren und orientieren wir uns neu, um die neusten Technologien auf dem Markt anbieten zu k&ouml;nnen. Da wir noch in der Lehre sind, k&ouml;nnen wir Ihnen beste Leistung zu sehr attraktiven Preisen anbieten."
+  },
+  "services": {
+    "heading": "Service",
+    "offers": [
+      {
+        "glyphicon": "signal",
+        "heading": "State Of The Art",
+        "text": "Die Webseiten werden mit den neusten Technologien und Standards umgesetzt."
+      },
+      {
+        "glyphicon": "cog",
+        "heading": "Alles in einem",
+        "text": "Design, Entwicklung, Hosting und Support: Bei uns haben Sie alle M&ouml;glichkeiten offen."
+      },
+      {
+        "glyphicon": "road",
+        "heading": "Unterhalt",
+        "text": "Wir bieten das komplette Instandhalten Ihrer Webseite an."
+      },
+      {
+        "glyphicon": "heart",
+        "heading": "Mit Liebe entwickelt",
+        "text": "All unsere Webseiten sind einzigartig und an die W&uuml;nsche der Kunden angepasst."
+      }
+    ]
   }
 }
