@@ -1,5 +1,9 @@
 {
   "name": "Deutsch",
+  "header": {
+    "slogan": "Web Design und Entwicklungs Start-Up",
+    "getInTouch": "Kontaktieren Sie uns"
+  },
   "navigation": {
     "toTop": "Startseite",
     "languageDropdown": {

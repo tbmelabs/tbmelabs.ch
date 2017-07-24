@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 
 import {connect} from 'react-redux';
 
+import Header from '../components/Header';
 import Navigation from '../components/Navigation';
 
 class Home extends React.Component {
@@ -14,6 +15,7 @@ class Home extends React.Component {
     return (
       <app>
         <Navigation texts={texts}/>
+        <Header texts={texts}/>
       </app>
     );
   }

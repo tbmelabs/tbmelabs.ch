@@ -1,5 +1,9 @@
 {
   "name": "English",
+  "header": {
+    "slogan": "Web design and development start-up",
+    "getInTouch": "Get in touch"
+  },
   "navigation": {
     "toTop": "Home",
     "languageDropdown": {
