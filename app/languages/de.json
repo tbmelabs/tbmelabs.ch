@@ -56,5 +56,9 @@
         "thumbnail": "mirioeggmann.jpg"
       }
     ]
+  },
+  "openSourceProjects": {
+    "heading": "Unsere Open-Sourced Projekte k&ouml;nnen auf GitHub gefunden werden!",
+    "linkText": "Sehen Sie sich die GitHub Projekte an"
   }
 }

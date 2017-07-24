@@ -5,24 +5,23 @@ import PropTypes from 'prop-types';
 
 require('bootstrap/dist/css/bootstrap.css');
 
-class Section extends React.Component {
+class Aside extends React.Component {
   render() {
-    const {id, sectionClass} = this.props;
+    const {assideClass} = this.props;
 
     return (
-      <section id={id} className={sectionClass}>
+      <aside className={assideClass}>
         <div className='container text-center'>
           {this.props.children}
         </div>
-      </section>
-    );
+      </aside>
+    )
   }
 }
 
-Section.propTypes = {
-  id: PropTypes.string.isRequired,
-  sectionClass: PropTypes.string,
+Aside.propTypes = {
+  assideClass: PropTypes.string,
   children: PropTypes.object.isRequired
 }
 
-export default Section;
+export default Aside;
