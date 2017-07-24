@@ -1,5 +1,10 @@
 {
-  "home": {
-    "heading": "React-Redux rendering is the future!"
+  "name": "English",
+  "navigation": {
+    "toTop": "Home",
+    "languageDropdown": {
+      "english": "English",
+      "german": "German"
+    }
   }
 }

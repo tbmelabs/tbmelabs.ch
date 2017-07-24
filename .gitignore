@@ -44,3 +44,6 @@ captures/
 
 # Keystore files
 *.jks
+
+# Node modules
+/node_modules

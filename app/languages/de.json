@@ -1,0 +1,10 @@
+{
+  "name": "Deutsch",
+  "navigation": {
+    "toTop": "Startseite",
+    "languageDropdown": {
+      "english": "Englisch",
+      "german": "Deutsch"
+    }
+  }
+}

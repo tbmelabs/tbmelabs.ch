@@ -5,18 +5,22 @@ import PropTypes from 'prop-types';
 
 import {connect} from 'react-redux';
 
+import Navigation from '../components/Navigation';
+
 class Home extends React.Component {
   render() {
-    const {home} = this.props.texts;
+    const {texts} = this.props;
 
     return (
-      <h1>{home.heading}</h1>
+      <app>
+        <Navigation texts={texts}/>
+      </app>
     );
   }
 }
 
 Home.propTypes = {
-  texts: PropTypes.object.isRequired
+  texts: PropTypes.object.isRequired,
 }
 
 Home.contextTypes = {
@@ -29,4 +33,12 @@ function mapStateToProps(state) {
   }
 }
 
-export default connect(mapStateToProps, null)(Home);
+function mapDispatchToProps(dispatch) {
+  return {
+    actions: {
+      // Map redux-actions here
+    }
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
