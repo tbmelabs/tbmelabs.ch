@@ -7,6 +7,7 @@ import {connect} from 'react-redux';
 
 import Header from '../components/Header';
 import Navigation from '../components/Navigation';
+import About from '../components/sections/About';
 import Footer from '../components/Footer';
 
 class Home extends React.Component {
@@ -17,6 +18,9 @@ class Home extends React.Component {
       <app>
         <Navigation texts={texts}/>
         <Header texts={texts}/>
+
+        <About texts={texts}/>
+
         <Footer/>
       </app>
     );

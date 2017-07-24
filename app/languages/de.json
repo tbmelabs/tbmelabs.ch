@@ -6,9 +6,10 @@
   },
   "navigation": {
     "toTop": "Startseite",
-    "languageDropdown": {
-      "english": "Englisch",
-      "german": "Deutsch"
-    }
+    "about": "&Uuml;ber Uns"
+  },
+  "about": {
+    "heading": "&Uuml;ber das Start-Up",
+    "text": "TBME Labs ist ein Web Design und Entwicklungs Start-Up, gef&uuml;hrt von zwei Informatiklernenden. Wir m&ouml;gen es, neue Sachen zu entdecken! St&auml;ndig informieren und orientieren wir uns neu, um die neusten Technologien auf dem Markt anbieten zu k&ouml;nnen. Da wir noch in der Lehre sind, k&ouml;nnen wir Ihnen beste Leistung zu sehr attraktiven Preisen anbieten."
   }
 }

@@ -6,9 +6,10 @@
   },
   "navigation": {
     "toTop": "Home",
-    "languageDropdown": {
-      "english": "English",
-      "german": "German"
-    }
+    "about": "About Us"
+  },
+  "about": {
+    "heading": "About Our Agency",
+    "text": "TBME Labs is a web design & development start-up run by two computer science students who really like creating stuff. We are constantly educating ourself to be able to work with the newest technologies on the market. Since we are still students we can offer state of the art products for very attractive prices."
   }
 }
