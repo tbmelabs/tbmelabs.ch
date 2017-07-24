@@ -9,7 +9,8 @@
     "about": "&Uuml;ber Uns",
     "services": "Service",
     "portfolio": "Portfolio",
-    "team": "Team"
+    "team": "Team",
+    "contact": "Kontakt"
   },
   "about": {
     "heading": "&Uuml;ber das Start-Up",
@@ -78,5 +79,9 @@
         "githubLink": "https://github.com/bbortt"
       }
     ]
+  },
+  "contact": {
+    "heading": "Nehmen Sie Kontakt mit uns auf!",
+    "text": "Bereit mit uns durchzustarten? Super! Senden Sie uns eine E-Mail und wir melden uns so bald als möglich bei Ihnen. Sie finden uns auch in den sozialen Medien!"
   }
 }

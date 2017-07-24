@@ -18,7 +18,7 @@ class Navigation extends React.Component {
 
     return (
       <navigation>
-        <Navbar collapseOnSelect>
+        <Navbar collapseOnSelect fixedTop>
           <Navbar.Header>
             <Navbar.Brand>
               <Link className='page-scroll' to="#page-top">TBME Labs</Link>
@@ -41,6 +41,9 @@ class Navigation extends React.Component {
               </LinkContainer>
               <LinkContainer className='page-scroll' to='#team'>
                 <NavItem>{navigation.team}</NavItem>
+              </LinkContainer>
+              <LinkContainer className='page-scroll' to='#contact'>
+                <NavItem>{navigation.contact}</NavItem>
               </LinkContainer>
             </Nav>
           </Navbar.Collapse>

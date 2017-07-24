@@ -12,6 +12,7 @@ import Services from '../components/sections/Services';
 import Portfolio from '../components/sections/Portfolio';
 import OpenSourceProjects from '../components/asides/OpenSourceProjects';
 import Team from '../components/sections/Team';
+import Contact from '../components/sections/Contact';
 import Footer from '../components/Footer';
 
 class Home extends React.Component {
@@ -28,6 +29,7 @@ class Home extends React.Component {
         <Portfolio texts={texts}/>
         <OpenSourceProjects texts={texts}/>
         <Team texts={texts}/>
+        <Contact texts={texts}/>
 
         <Footer/>
       </app>
