@@ -9,6 +9,7 @@ import Header from '../components/Header';
 import Navigation from '../components/Navigation';
 import About from '../components/sections/About';
 import Services from '../components/sections/Services';
+import Portfolio from '../components/sections/Portfolio';
 import Footer from '../components/Footer';
 
 class Home extends React.Component {
@@ -22,6 +23,7 @@ class Home extends React.Component {
 
         <About texts={texts}/>
         <Services texts={texts}/>
+        <Portfolio texts={texts}/>
 
         <Footer/>
       </app>

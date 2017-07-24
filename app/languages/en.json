@@ -7,7 +7,8 @@
   "navigation": {
     "toTop": "Home",
     "about": "About Us",
-    "services": "Services"
+    "services": "Services",
+    "portfolio": "Portfolio"
   },
   "about": {
     "heading": "About Our Agency",
@@ -36,6 +37,13 @@
         "heading": "Built With Love",
         "text": "All our websites are unique and adapted to the wishes of the clients."
       }
+    ]
+  },
+  "portfolio": {
+    "heading": "Portfolio",
+    "text": "A selection of our projects.",
+    "selection":[
+
     ]
   }
 }

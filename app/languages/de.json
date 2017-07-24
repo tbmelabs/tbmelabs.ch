@@ -7,7 +7,8 @@
   "navigation": {
     "toTop": "Startseite",
     "about": "&Uuml;ber Uns",
-    "services": "Service"
+    "services": "Service",
+    "portfolio": "Portfolio"
   },
   "about": {
     "heading": "&Uuml;ber das Start-Up",
@@ -37,5 +38,9 @@
         "text": "All unsere Webseiten sind einzigartig und an die W&uuml;nsche der Kunden angepasst."
       }
     ]
+  },
+  "portfolio": {
+    "heading": "Portfolio",
+    "text": "Eine Auswahl unserer Projekte."
   }
 }
