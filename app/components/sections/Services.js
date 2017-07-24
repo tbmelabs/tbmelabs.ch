@@ -24,7 +24,6 @@ class Services extends React.Component {
               <h2>{services.heading}</h2>
             </Col>
           </Row>
-          <hr/>
           <Row>
             {services.offers.map(offer => {
               return (

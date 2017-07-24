@@ -42,9 +42,18 @@
   "portfolio": {
     "heading": "Portfolio",
     "text": "A selection of our projects.",
-    "selection":[
+    "selection": [
       {
-
+        "link": "https://homoeopathie-eggmann.ch",
+        "thumbnail": "homoeopathie-eggmann.jpg"
+      },
+      {
+        "link": "https://einfachspielen.ch",
+        "thumbnail": "einfachspielen.jpg"
+      },
+      {
+        "link": "https://mirioeggmann.ch",
+        "thumbnail": "mirioeggmann.jpg"
       }
     ]
   }
