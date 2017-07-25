@@ -16,7 +16,7 @@ class OpenSourceProjects extends React.Component {
     return (
       <Aside>
         <h2>{openSourceProjects.heading}</h2>
-        <Button><a href='https://github.com/tbmelabs'>{openSourceProjects.linkText}</a></Button>
+        <a href='https://github.com/tbmelabs'><Button>{openSourceProjects.linkText}</Button></a>
       </Aside>
     );
   }

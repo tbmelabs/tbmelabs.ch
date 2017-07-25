@@ -20,7 +20,7 @@ class Header extends React.Component {
         <p>
           {header.slogan}
         </p>
-        <Button><Link className='page-scroll' to='#contact'>{header.getInTouch}</Link></Button>
+        <Link className='page-scroll' to='#contact'><Button>{header.getInTouch}</Button></Link>
       </header>
     );
   }
