@@ -27,8 +27,8 @@ var config = {
         ]
       }
     }, {
-      test: /\.css$/,
-      loader: "style-loader!css-loader"
+      test: /\.(css|less)$/,
+      loader: "style-loader!css-loader!less-loader"
     }, {
       test: /\.(jpe?g|png|svg)$/,
       loader: "file-loader"

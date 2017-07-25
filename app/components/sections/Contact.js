@@ -11,6 +11,7 @@ import Col from 'react-bootstrap/lib/Col';
 import Glyphicon from 'react-bootstrap/lib/Glyphicon';
 
 require('bootstrap/dist/css/bootstrap.css');
+require('font-awesome-webpack');
 
 class Contact extends React.Component {
   render() {
@@ -32,7 +33,7 @@ class Contact extends React.Component {
           <Row>
             <a class="text-faded" href="https://github.com/tbmelabs">
               <Col lg={3} md={6}>
-                <Glyphicon glyph='github'/>
+                <Glyphicon glyph='fa-github'/>
                 <p>GitHub</p>
               </Col>
             </a>
