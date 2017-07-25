@@ -8,9 +8,11 @@ import Section from '../common/Section';
 import Grid from 'react-bootstrap/lib/Grid';
 import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
-import Glyphicon from 'react-bootstrap/lib/Glyphicon';
+
+import FontAwesome from 'react-fontawesome';
 
 require('bootstrap/dist/css/bootstrap.css');
+require('font-awesome/css/font-awesome.css');
 
 class Services extends React.Component {
   render() {
@@ -28,7 +30,7 @@ class Services extends React.Component {
             {services.offers.map(offer => {
               return (
                 <Col lg={3} md={6} key={offer.heading}>
-                  <Glyphicon glyph={offer.glyphicon}/>
+                  <FontAwesome name={offer.icon}/>
                   <h3>{offer.heading}</h3>
                   <p>{offer.text}</p>
                 </Col>

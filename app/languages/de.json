@@ -20,22 +20,22 @@
     "heading": "Service",
     "offers": [
       {
-        "glyphicon": "signal",
+        "icon": "wrench",
         "heading": "State Of The Art",
         "text": "Die Webseiten werden mit den neusten Technologien und Standards umgesetzt."
       },
       {
-        "glyphicon": "cog",
+        "icon": "rocket",
         "heading": "Alles in einem",
         "text": "Design, Entwicklung, Hosting und Support: Bei uns haben Sie alle M&ouml;glichkeiten offen."
       },
       {
-        "glyphicon": "road",
+        "icon": "road",
         "heading": "Unterhalt",
         "text": "Wir bieten das komplette Instandhalten Ihrer Webseite an."
       },
       {
-        "glyphicon": "heart",
+        "icon": "heart",
         "heading": "Mit Liebe entwickelt",
         "text": "All unsere Webseiten sind einzigartig und an die W&uuml;nsche der Kunden angepasst."
       }

@@ -8,10 +8,11 @@ import Section from '../common/Section';
 import Grid from 'react-bootstrap/lib/Grid';
 import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
-import Glyphicon from 'react-bootstrap/lib/Glyphicon';
+
+import FontAwesome from 'react-fontawesome';
 
 require('bootstrap/dist/css/bootstrap.css');
-require('font-awesome-webpack');
+require('font-awesome/css/font-awesome.css');
 
 class Contact extends React.Component {
   render() {
@@ -33,25 +34,25 @@ class Contact extends React.Component {
           <Row>
             <a class="text-faded" href="https://github.com/tbmelabs">
               <Col lg={3} md={6}>
-                <Glyphicon glyph='fa-github'/>
+                <FontAwesome name='github'/>
                 <p>GitHub</p>
               </Col>
             </a>
             <a class="text-faded" href="https://twitter.com/tbmelabs">
               <Col lg={3} md={6}>
-                <Glyphicon glyph='twitter'/>
+                <FontAwesome name='twitter'/>
                 <p>Twitter</p>
               </Col>
             </a>
             <a class="text-faded" href="https://instagram.com/tbmelabs">
               <Col lg={3} md={6}>
-                <Glyphicon glyph='instagram'/>
+                <FontAwesome name='instagram'/>
                 <p>Instagram</p>
               </Col>
             </a>
             <a class="text-faded" href="mailto:info@tbmelabs.ch">
               <Col lg={3} md={6}>
-                <Glyphicon glyph='envelope'/>
+                <FontAwesome name='envelope'/>
                 <p>info@tbmelabs.ch</p>
               </Col>
             </a> </Row>

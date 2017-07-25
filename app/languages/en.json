@@ -20,22 +20,22 @@
     "heading": "Services",
     "offers": [
       {
-        "glyphicon": "signal",
+        "icon": "wrench",
         "heading": "State Of The Art",
         "text": "The websites are created with state of the art technologies."
       },
       {
-        "glyphicon": "cog",
+        "icon": "rocket",
         "heading": "All In One",
         "text": "Design, development, hosting and support: We offer all in one."
       },
       {
-        "glyphicon": "road",
+        "icon": "road",
         "heading": "Maintenance",
         "text": "We offer to update and maintain your website."
       },
       {
-        "glyphicon": "heart",
+        "icon": "heart",
         "heading": "Built With Love",
         "text": "All our websites are unique and adapted to the wishes of the clients."
       }
