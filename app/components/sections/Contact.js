@@ -34,25 +34,25 @@ class Contact extends React.Component {
           <Row>
             <a class="text-faded" href="https://github.com/tbmelabs">
               <Col lg={3} md={6}>
-                <FontAwesome name='github'/>
+                <FontAwesome name='github' className='fa-5x'/>
                 <p>GitHub</p>
               </Col>
             </a>
             <a class="text-faded" href="https://twitter.com/tbmelabs">
               <Col lg={3} md={6}>
-                <FontAwesome name='twitter'/>
+                <FontAwesome name='twitter' className='fa-5x'/>
                 <p>Twitter</p>
               </Col>
             </a>
             <a class="text-faded" href="https://instagram.com/tbmelabs">
               <Col lg={3} md={6}>
-                <FontAwesome name='instagram'/>
+                <FontAwesome name='instagram' className='fa-5x'/>
                 <p>Instagram</p>
               </Col>
             </a>
             <a class="text-faded" href="mailto:info@tbmelabs.ch">
               <Col lg={3} md={6}>
-                <FontAwesome name='envelope'/>
+                <FontAwesome name='envelope' className='fa-5x'/>
                 <p>info@tbmelabs.ch</p>
               </Col>
             </a> </Row>

@@ -30,7 +30,7 @@ class Services extends React.Component {
             {services.offers.map(offer => {
               return (
                 <Col lg={3} md={6} key={offer.heading}>
-                  <FontAwesome name={offer.icon}/>
+                  <FontAwesome name={offer.icon} className='fa-4x'/>
                   <h3>{offer.heading}</h3>
                   <p>{offer.text}</p>
                 </Col>
