@@ -30,7 +30,7 @@ class Team extends React.Component {
           {
             team.members.map(member => {
               return (
-                <Col lg={6}>
+                <Col lg={6} key={member.name}>
                   <Image src={'public/' + require('../../images/' + member.thumbnail)} circle/>
                   <h4>{member.name}</h4>
                   <p>{member.title}</p>
