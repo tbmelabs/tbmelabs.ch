@@ -33,9 +33,9 @@ class Portfolio extends React.Component {
           </Row>
           <Row>
             {
-              getRandomElementsFromArray(3, portfolio.selection).map(example => {
+              getRandomElementsFromArray(3, portfolio.selection).map((example, iterator) => {
                 return (
-                  <Col lg={4} md={6} sm={12}>
+                  <Col lg={4} md={6} sm={12} key={iterator}>
                     <a href={example.link} target='_blank'>
                       <Image src={'public/' + require('../../images/' + example.thumbnail)} thumbnail
                              responsive/>
