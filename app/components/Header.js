@@ -3,7 +3,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import {Link} from 'react-router-dom';
+import {goToAnchor} from 'react-scrollable-anchor'
+
+import Section from './common/Section';
 
 import PageHeader from 'react-bootstrap/lib/PageHeader';
 import Button from 'react-bootstrap/lib/Button';
@@ -11,16 +13,30 @@ import Button from 'react-bootstrap/lib/Button';
 require('bootstrap/dist/css/bootstrap.css');
 
 class Header extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.onClick = this.onClick.bind(this);
+  }
+
+  onClick(event) {
+    event.preventDefault();
+
+    goToAnchor('contact');
+  }
+
   render() {
     const {header} = this.props.texts;
 
     return (
       <header className='text-center'>
-        <PageHeader>TBME Labs</PageHeader>
-        <p>
-          {header.slogan}
-        </p>
-        <Link className='page-scroll' to='#contact'><Button>{header.getInTouch}</Button></Link>
+        <Section id='page-top'>
+          <PageHeader>TBME Labs</PageHeader>
+          <p>
+            {header.slogan}
+          </p>
+          <Button onClick={this.onClick}>{header.getInTouch}</Button>
+        </Section>
       </header>
     );
   }

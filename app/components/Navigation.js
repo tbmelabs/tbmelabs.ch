@@ -3,6 +3,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import {goToAnchor} from 'react-scrollable-anchor'
+
 import {Link} from 'react-router-dom';
 import {LinkContainer} from 'react-router-bootstrap';
 
@@ -13,6 +15,18 @@ import NavItem from 'react-bootstrap/lib/NavItem';
 require('bootstrap/dist/css/bootstrap.css');
 
 class Navigation extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.onClick = this.onClick.bind(this);
+  }
+
+  onClick(event) {
+    event.preventDefault();
+
+    goToAnchor(event.target.href.split('#')[1]);
+  }
+
   render() {
     const {navigation} = this.props.texts;
 
@@ -21,28 +35,28 @@ class Navigation extends React.Component {
         <Navbar collapseOnSelect fixedTop>
           <Navbar.Header>
             <Navbar.Brand>
-              <Link className='page-scroll' to="#page-top">TBME Labs</Link>
+              <Link onClick={this.onClick} to="#page-top">TBME Labs</Link>
             </Navbar.Brand>
             <Navbar.Toggle/>
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav pullRight>
-              <LinkContainer className='page-scroll' to='#page-top'>
+              <LinkContainer onClick={this.onClick} to='#page-top'>
                 <NavItem>{navigation.toTop}</NavItem>
               </LinkContainer>
-              <LinkContainer className='page-scroll' to='#about'>
+              <LinkContainer onClick={this.onClick} to='#about'>
                 <NavItem>{navigation.about}</NavItem>
               </LinkContainer>
-              <LinkContainer className='page-scroll' to='#services'>
+              <LinkContainer onClick={this.onClick} to='#services'>
                 <NavItem>{navigation.services}</NavItem>
               </LinkContainer>
-              <LinkContainer className='page-scroll' to='#portfolio'>
+              <LinkContainer onClick={this.onClick} to='#portfolio'>
                 <NavItem>{navigation.portfolio}</NavItem>
               </LinkContainer>
-              <LinkContainer className='page-scroll' to='#team'>
+              <LinkContainer onClick={this.onClick} to='#team'>
                 <NavItem>{navigation.team}</NavItem>
               </LinkContainer>
-              <LinkContainer className='page-scroll' to='#contact'>
+              <LinkContainer onClick={this.onClick} to='#contact'>
                 <NavItem>{navigation.contact}</NavItem>
               </LinkContainer>
             </Nav>

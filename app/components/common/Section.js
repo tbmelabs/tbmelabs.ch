@@ -3,6 +3,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import ScrollableAnchor from 'react-scrollable-anchor'
+
 require('bootstrap/dist/css/bootstrap.css');
 
 class Section extends React.Component {
@@ -10,11 +12,11 @@ class Section extends React.Component {
     const {id, sectionClass} = this.props;
 
     return (
-      <section id={id} className={sectionClass}>
+      <ScrollableAnchor id={id} className={sectionClass}>
         <div className='container text-center'>
           {this.props.children}
         </div>
-      </section>
+      </ScrollableAnchor>
     );
   }
 }
