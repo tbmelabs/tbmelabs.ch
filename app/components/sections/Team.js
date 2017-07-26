@@ -9,9 +9,11 @@ import Grid from 'react-bootstrap/lib/Grid';
 import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
 import Image from 'react-bootstrap/lib/Image';
-import Glyphicon from 'react-bootstrap/lib/Glyphicon';
+
+import FontAwesome from 'react-fontawesome';
 
 require('bootstrap/dist/css/bootstrap.css');
+require('font-awesome/css/font-awesome.css');
 
 class Team extends React.Component {
   render() {
@@ -29,11 +31,11 @@ class Team extends React.Component {
             team.members.map(member => {
               return (
                 <Col lg={6}>
-                  <Image src={'public/' + require('../../images/' + member.thumbnail)} circle responsive/>
+                  <Image src={'public/' + require('../../images/' + member.thumbnail)} circle/>
                   <h4>{member.name}</h4>
                   <p>{member.title}</p>
                   <ul className='list-inline'>
-                    <li><a href={member.githubLink}><Glyphicon glyph='github'/></a></li>
+                    <li><a href={member.githubLink}><FontAwesome name='github' className='fa-2x'/></a></li>
                   </ul>
                 </Col>
               );
