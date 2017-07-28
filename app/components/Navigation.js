@@ -13,6 +13,7 @@ import Nav from 'react-bootstrap/lib/Nav';
 import NavItem from 'react-bootstrap/lib/NavItem';
 
 require('bootstrap/dist/css/bootstrap.css');
+require('../styles/navigation.css');
 
 class Navigation extends React.Component {
   constructor(props) {
