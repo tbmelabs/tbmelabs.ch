@@ -34,6 +34,7 @@ class Portfolio extends React.Component {
               <h2>{portfolio.heading}</h2>
             </Col>
           </Row>
+          <hr/>
           <Row>
             <Col lg={12}>
               <p>{portfolio.text}</p>
@@ -45,7 +46,7 @@ class Portfolio extends React.Component {
                 return (
                   <Col lg={4} md={6} sm={12} key={iterator}>
                     <a href={example.link} target='_blank'>
-                      <Image src={'public/' + require('../../images/' + example.thumbnail)} thumbnail
+                      <Image src={require('../../images/' + example.thumbnail)} thumbnail
                              responsive/>
                     </a>
                   </Col>

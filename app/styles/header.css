@@ -15,11 +15,15 @@ header {
   background-size: cover;
 }
 
-.header-content {
+#header-content {
   position: relative;
   width: 100%;
-  top: 50%;
+  top: 45%;
   text-align: center;
+}
+
+#header-content p {
+  padding-bottom: 1%;
 }
 
 .page-header {

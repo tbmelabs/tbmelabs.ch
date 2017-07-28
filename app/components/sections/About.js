@@ -23,6 +23,7 @@ class About extends React.Component {
               <h2>{about.heading}</h2>
             </Col>
           </Row>
+          <hr/>
           <Row>
             <Col lg={8} lgOffset={2}>
               <p>{about.text}</p>

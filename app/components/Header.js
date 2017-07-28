@@ -3,7 +3,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import {goToAnchor} from 'react-scrollable-anchor'
+import ScrollableAnchor, {goToAnchor} from 'react-scrollable-anchor';
 
 import Section from './common/Section';
 
@@ -30,15 +30,17 @@ class Header extends React.Component {
     const {header} = this.props.texts;
 
     return (
-      <Section id='page-top'>
+      <ScrollableAnchor id='page-top'>
         <header className='text-center'>
-          <PageHeader>TBME Labs</PageHeader>
-          <p>
-            {header.slogan}
-          </p>
-          <Button onClick={this.onClick}>{header.getInTouch}</Button>
+          <div id='header-content'>
+            <PageHeader>TBME Labs</PageHeader>
+            <p>
+              {header.slogan}
+            </p>
+            <Button onClick={this.onClick}>{header.getInTouch}</Button>
+          </div>
         </header>
-      </Section>
+      </ScrollableAnchor>
     );
   }
 }

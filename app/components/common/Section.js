@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import ScrollableAnchor from 'react-scrollable-anchor'
 
 require('bootstrap/dist/css/bootstrap.css');
+require('../../styles/section.css');
 
 class Section extends React.Component {
   render() {

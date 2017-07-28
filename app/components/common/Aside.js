@@ -4,6 +4,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 require('bootstrap/dist/css/bootstrap.css');
+require('../../styles/aside.css');
 
 class Aside extends React.Component {
   render() {

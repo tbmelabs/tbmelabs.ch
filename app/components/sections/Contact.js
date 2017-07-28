@@ -26,6 +26,7 @@ class Contact extends React.Component {
               <h2>{contact.heading}</h2>
             </Col>
           </Row>
+          <hr/>
           <Row>
             <Col lg={8} lgOffset={2}>
               <p>{contact.text}</p>

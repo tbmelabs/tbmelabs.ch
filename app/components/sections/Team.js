@@ -27,21 +27,22 @@ class Team extends React.Component {
               <h2>{team.heading}</h2>
             </Col>
           </Row>
-          {
-            team.members.map(member => {
-              return (
-                <Col lg={6} key={member.name}>
-                  <Image src={require('../../images/' + member.thumbnail)} circle/>
-                  <h4>{member.name}</h4>
-                  <p>{member.title}</p>
-                  <ul className='list-inline'>
-                    <li><a href={member.githubLink}><FontAwesome name='github' className='fa-2x'/></a></li>
-                  </ul>
-                </Col>
-              );
-            })
-          }
+          <hr/>
           <Row>
+            {
+              team.members.map(member => {
+                return (
+                  <Col lg={6} key={member.name}>
+                    <Image src={require('../../images/' + member.thumbnail)} circle/>
+                    <h4>{member.name}</h4>
+                    <p>{member.title}</p>
+                    <ul className='list-inline'>
+                      <li><a href={member.githubLink}><FontAwesome name='github' className='fa-2x'/></a></li>
+                    </ul>
+                  </Col>
+                );
+              })
+            }
           </Row>
         </Grid>
       </Section>
