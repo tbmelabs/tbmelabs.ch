@@ -15,6 +15,14 @@ import Image from 'react-bootstrap/lib/Image';
 require('bootstrap/dist/css/bootstrap.css');
 
 class Portfolio extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      selection: getRandomElementsFromArray(3, this.props.texts.portfolio.selection)
+    }
+  }
+
   render() {
     const {portfolio} = this.props.texts;
 
@@ -33,7 +41,7 @@ class Portfolio extends React.Component {
           </Row>
           <Row>
             {
-              getRandomElementsFromArray(3, portfolio.selection).map((example, iterator) => {
+              this.state.selection.map((example, iterator) => {
                 return (
                   <Col lg={4} md={6} sm={12} key={iterator}>
                     <a href={example.link} target='_blank'>
