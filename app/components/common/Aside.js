@@ -11,9 +11,7 @@ class Aside extends React.Component {
 
     return (
       <aside className={assideClass}>
-        <div className='container text-center'>
-          {this.props.children}
-        </div>
+        {this.props.children}
       </aside>
     )
   }
