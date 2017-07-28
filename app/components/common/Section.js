@@ -13,9 +13,9 @@ class Section extends React.Component {
 
     return (
       <ScrollableAnchor id={id} className={sectionClass}>
-        <div className='container text-center'>
+        <section>
           {this.props.children}
-        </div>
+        </section>
       </ScrollableAnchor>
     );
   }

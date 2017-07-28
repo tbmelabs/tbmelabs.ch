@@ -1,0 +1,10 @@
+section {
+  top: 100%;
+  position: relative;
+  text-align: center;
+  padding: 2% 0 3% 0;
+}
+
+hr {
+  max-width: 50px;
+}

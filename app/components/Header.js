@@ -11,6 +11,7 @@ import PageHeader from 'react-bootstrap/lib/PageHeader';
 import Button from 'react-bootstrap/lib/Button';
 
 require('bootstrap/dist/css/bootstrap.css');
+require('../styles/header.css');
 
 class Header extends React.Component {
   constructor(props) {
@@ -29,15 +30,15 @@ class Header extends React.Component {
     const {header} = this.props.texts;
 
     return (
-      <header className='text-center'>
-        <Section id='page-top'>
+      <Section id='page-top'>
+        <header className='text-center'>
           <PageHeader>TBME Labs</PageHeader>
           <p>
             {header.slogan}
           </p>
           <Button onClick={this.onClick}>{header.getInTouch}</Button>
-        </Section>
-      </header>
+        </header>
+      </Section>
     );
   }
 }
