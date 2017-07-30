@@ -8,6 +8,8 @@ import {Provider} from 'react-redux';
 import thunk from 'redux-thunk';
 import reducers from './reducers';
 
+import {CookiesProvider} from 'react-cookie';
+
 import {BrowserRouter} from 'react-router-dom';
 import {Route, Switch} from 'react-router-dom';
 
@@ -25,11 +27,13 @@ class App extends React.Component {
   render() {
     return (
       <Provider store={store}>
-        <BrowserRouter>
-          <Switch>
-            <Route path='/' component={Home}/>
-          </Switch>
-        </BrowserRouter>
+        <CookiesProvider>
+          <BrowserRouter>
+            <Switch>
+              <Route path='/' component={Home}/>
+            </Switch>
+          </BrowserRouter>
+        </CookiesProvider>
       </Provider>
     );
   }

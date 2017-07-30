@@ -2,21 +2,23 @@
 
 import {SET_CURRENT_LANGUAGE} from '../actions/types';
 
-const en = require('../languages/en.json');
+const de = require('../languages/de.json');
 
 const initialState = {
-  name: en.name,
-  texts: en
+  name: de.name,
+  texts: de,
+  id: 'de'
 }
 
-export default (state = initialState, action = {})=> {
+export default (state = initialState, action = {}) => {
   switch (action.type) {
     case SET_CURRENT_LANGUAGE:
       const language = require('../languages/' + action.language + '.json');
 
       return {
         name: language.name,
-        texts: language
+        texts: language,
+        id: action.language
       }
     default:
       return state;
