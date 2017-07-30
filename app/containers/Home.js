@@ -15,6 +15,8 @@ import Team from '../components/sections/Team';
 import Contact from '../components/sections/Contact';
 import Footer from '../components/Footer';
 
+require('../styles/tbmelabs.css');
+
 class Home extends React.Component {
   render() {
     const {texts} = this.props;

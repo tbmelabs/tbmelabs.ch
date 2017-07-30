@@ -4,6 +4,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Section from '../common/Section';
+import FadeInOnScroll from '../common/FadeInOnScroll';
 
 import Grid from 'react-bootstrap/lib/Grid';
 import Row from 'react-bootstrap/lib/Row';
@@ -19,7 +20,7 @@ class Contact extends React.Component {
     const {contact} = this.props.texts;
 
     return (
-      <Section id='contact'>
+      <Section id='contact' sectionClass='section-light'>
         <Grid>
           <Row>
             <Col lg={8} lgOffset={2}>
@@ -33,30 +34,38 @@ class Contact extends React.Component {
             </Col>
           </Row>
           <Row>
-            <a href="https://github.com/tbmelabs">
-              <Col lg={3} md={6}>
-                <FontAwesome name='github' className='fa-5x'/>
-                <p>GitHub</p>
-              </Col>
-            </a>
-            <a href="https://twitter.com/tbmelabs">
-              <Col lg={3} md={6}>
-                <FontAwesome name='twitter' className='fa-5x'/>
-                <p>Twitter</p>
-              </Col>
-            </a>
-            <a href="https://instagram.com/tbmelabs">
-              <Col lg={3} md={6}>
-                <FontAwesome name='instagram' className='fa-5x'/>
-                <p>Instagram</p>
-              </Col>
-            </a>
-            <a href="mailto:info@tbmelabs.ch">
-              <Col lg={3} md={6}>
-                <FontAwesome name='envelope' className='fa-5x'/>
-                <p>info@tbmelabs.ch</p>
-              </Col>
-            </a>
+            <Col lg={3} md={6}>
+              <FadeInOnScroll duration={2000}>
+                <a href="https://github.com/tbmelabs">
+                  <FontAwesome name='github' className='fa-5x'/>
+                  <p>GitHub</p>
+                </a>
+              </FadeInOnScroll>
+            </Col>
+            <Col lg={3} md={6}>
+              <FadeInOnScroll duration={4000}>
+                <a href="https://twitter.com/tbmelabs">
+                  <FontAwesome name='twitter' className='fa-5x'/>
+                  <p>Twitter</p>
+                </a>
+              </FadeInOnScroll>
+            </Col>
+            <Col lg={3} md={6}>
+              <FadeInOnScroll duration={6000}>
+                <a href="https://instagram.com/tbmelabs">
+                  <FontAwesome name='instagram' className='fa-5x'/>
+                  <p>Instagram</p>
+                </a>
+              </FadeInOnScroll>
+            </Col>
+            <Col lg={3} md={6}>
+              <FadeInOnScroll duration={8000}>
+                <a href="mailto:info@tbmelabs.ch">
+                  <FontAwesome name='envelope' className='fa-5x'/>
+                  <p>info@tbmelabs.ch</p>
+                </a>
+              </FadeInOnScroll>
+            </Col>
           </Row>
         </Grid>
       </Section>

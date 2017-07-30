@@ -13,8 +13,8 @@ class Section extends React.Component {
     const {id, sectionClass} = this.props;
 
     return (
-      <ScrollableAnchor id={id} className={sectionClass}>
-        <section>
+      <ScrollableAnchor id={id}>
+        <section className={sectionClass}>
           {this.props.children}
         </section>
       </ScrollableAnchor>

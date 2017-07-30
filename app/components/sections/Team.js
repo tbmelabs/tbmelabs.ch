@@ -4,6 +4,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Section from '../common/Section';
+import FadeInOnScroll from '../common/FadeInOnScroll';
 
 import Grid from 'react-bootstrap/lib/Grid';
 import Row from 'react-bootstrap/lib/Row';
@@ -30,15 +31,19 @@ class Team extends React.Component {
           <hr/>
           <Row>
             {
-              team.members.map(member => {
+              team.members.map((member, iterator) => {
                 return (
                   <Col lg={6} key={member.name}>
-                    <Image src={require('../../images/' + member.thumbnail)} circle/>
-                    <h4>{member.name}</h4>
-                    <p>{member.title}</p>
-                    <ul className='list-inline'>
-                      <li><a href={member.githubLink}><FontAwesome name='github' className='fa-2x'/></a></li>
-                    </ul>
+                    <FadeInOnScroll duration={(iterator + 1) * 2000}>
+                      <div>
+                        <Image src={require('../../images/' + member.thumbnail)} circle/>
+                        <h4>{member.name}</h4>
+                        <p>{member.title}</p>
+                        <ul className='list-inline'>
+                          <li><a href={member.githubLink}><FontAwesome name='github' className='fa-2x'/></a></li>
+                        </ul>
+                      </div>
+                    </FadeInOnScroll>
                   </Col>
                 );
               })

@@ -14,7 +14,7 @@ class OpenSourceProjects extends React.Component {
     const {openSourceProjects} = this.props.texts;
 
     return (
-      <Aside>
+      <Aside assideClass='aside-light'>
         <div className='container'>
           <h2>{openSourceProjects.heading}</h2>
           <a href='https://github.com/tbmelabs'><Button>{openSourceProjects.linkText}</Button></a>

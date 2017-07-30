@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import getRandomElementsFromArray from '../../utils/getRandomElementsFromArray';
 
 import Section from '../common/Section';
+import FadeInOnScroll from '../common/FadeInOnScroll';
 
 import Grid from 'react-bootstrap/lib/Grid';
 import Row from 'react-bootstrap/lib/Row';
@@ -45,10 +46,12 @@ class Portfolio extends React.Component {
               this.state.selection.map((example, iterator) => {
                 return (
                   <Col lg={4} md={6} sm={12} key={iterator}>
-                    <a href={example.link} target='_blank'>
-                      <Image src={require('../../images/' + example.thumbnail)} thumbnail
-                             responsive/>
-                    </a>
+                    <FadeInOnScroll duration={(iterator + 1) * 2000}>
+                      <a href={example.link} target='_blank'>
+                        <Image src={require('../../images/' + example.thumbnail)} thumbnail
+                               responsive/>
+                      </a>
+                    </FadeInOnScroll>
                   </Col>
                 );
               })
