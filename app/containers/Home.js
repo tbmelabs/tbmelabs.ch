@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import {bindActionCreators}from 'redux';
 import {connect} from 'react-redux';
 
+import {disableCookieWarning} from '../actions/cookieActions';
 import {setCurrentLanguage} from '../actions/languageActions';
 
 import Header from '../components/Header';
@@ -23,8 +24,8 @@ require('../styles/tbmelabs.css');
 
 class Home extends React.Component {
   render() {
-    const {texts} = this.props;
-    const {switchLanguage} = this.props.actions;
+    const {texts, showCookieWarning} = this.props;
+    const {disableCookieWarning, switchLanguage} = this.props.actions;
 
     return (
       <app>
@@ -38,7 +39,7 @@ class Home extends React.Component {
         <Team texts={texts}/>
         <Contact texts={texts}/>
 
-        <CookieWarning texts={texts}/>
+        <CookieWarning show={showCookieWarning} texts={texts} disableCookieWarning={disableCookieWarning}/>
 
         <Footer/>
       </app>
@@ -48,6 +49,7 @@ class Home extends React.Component {
 
 Home.propTypes = {
   texts: PropTypes.object.isRequired,
+  showCookieWarning: PropTypes.bool.isRequired,
   actions: PropTypes.object.isRequired
 }
 
@@ -57,13 +59,15 @@ Home.contextTypes = {
 
 function mapStateToProps(state) {
   return {
-    texts: state.language.texts
+    texts: state.language.texts,
+    showCookieWarning: state.cookie.show
   }
 }
 
 function mapDispatchToProps(dispatch) {
   return {
     actions: {
+      disableCookieWarning: bindActionCreators(disableCookieWarning, dispatch),
       switchLanguage: bindActionCreators(setCurrentLanguage, dispatch)
     }
   }

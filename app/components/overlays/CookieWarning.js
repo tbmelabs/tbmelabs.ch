@@ -15,24 +15,20 @@ class CookieWarning extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      show: true
-    }
-
     this.onClick = this.onClick.bind(this);
   }
 
   onClick(event) {
-    this.setState({show: false});
+    this.props.disableCookieWarning();
   }
 
   render() {
-    const {cookieWarning} = this.props.texts;
-
     // If cookie warning already dispatched
-    if (!this.state.show) {
+    if (!this.props.show) {
       return null;
     }
+
+    const {cookieWarning} = this.props.texts;
 
     return (
       <cookiewarning>
@@ -51,7 +47,9 @@ class CookieWarning extends React.Component {
 }
 
 CookieWarning.propTypes = {
-  texts: PropTypes.object.isRequired
+  texts: PropTypes.object.isRequired,
+  show: PropTypes.bool.isRequired,
+  disableCookieWarning: PropTypes.func.isRequired
 }
 
 export default CookieWarning;
