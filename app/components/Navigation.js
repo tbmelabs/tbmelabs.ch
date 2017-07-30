@@ -11,6 +11,8 @@ import {LinkContainer} from 'react-router-bootstrap';
 import Navbar from 'react-bootstrap/lib/Navbar';
 import Nav from 'react-bootstrap/lib/Nav';
 import NavItem from 'react-bootstrap/lib/NavItem';
+import NavDropdown from 'react-bootstrap/lib/NavDropdown';
+import MenuItem from 'react-bootstrap/lib/MenuItem';
 
 require('bootstrap/dist/css/bootstrap.css');
 require('../styles/navigation.css');
@@ -20,6 +22,7 @@ class Navigation extends React.Component {
     super(props);
 
     this.onClick = this.onClick.bind(this);
+    this.onSelect = this.onSelect.bind(this);
   }
 
   onClick(event) {
@@ -28,8 +31,12 @@ class Navigation extends React.Component {
     goToAnchor(event.target.href.split('#')[1]);
   }
 
+  onSelect(eventKey) {
+    this.props.switchLanguage(eventKey);
+  }
+
   render() {
-    const {navigation} = this.props.texts;
+    const {name, navigation} = this.props.texts;
 
     return (
       <navigation>
@@ -42,7 +49,7 @@ class Navigation extends React.Component {
             <Navbar.Toggle/>
           </Navbar.Header>
           <Navbar.Collapse>
-            <Nav pullRight>
+            <Nav>
               <LinkContainer onClick={this.onClick} to='#page-top'>
                 <NavItem>{navigation.toTop}</NavItem>
               </LinkContainer>
@@ -62,6 +69,18 @@ class Navigation extends React.Component {
                 <NavItem>{navigation.contact}</NavItem>
               </LinkContainer>
             </Nav>
+            <Nav pullRight onSelect={this.onSelect}>
+              <NavDropdown id='select-language-dropdown' title={name}>
+                {
+                  name === 'English' ? null :
+                    <MenuItem eventKey='en'>English</MenuItem>
+                }
+                {
+                  name === 'Deutsch' ? null :
+                    <MenuItem eventKey='de'>Deutsch</MenuItem>
+                }
+              </NavDropdown>
+            </Nav>
           </Navbar.Collapse>
         </Navbar>
       </navigation >
@@ -71,6 +90,7 @@ class Navigation extends React.Component {
 
 Navigation.propTypes = {
   texts: PropTypes.object.isRequired,
+  switchLanguage: PropTypes.func.isRequired
 }
 
 export default Navigation;

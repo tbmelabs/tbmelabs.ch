@@ -6,15 +6,15 @@
   },
   "navigation": {
     "toTop": "Startseite",
-    "about": "&Uuml;ber Uns",
+    "about": "Über Uns",
     "services": "Service",
     "portfolio": "Portfolio",
     "team": "Team",
     "contact": "Kontakt"
   },
   "about": {
-    "heading": "&Uuml;ber das Start-Up",
-    "text": "TBME Labs ist ein Web Design und Entwicklungs Start-Up, gef&uuml;hrt von zwei Informatiklernenden. Wir m&ouml;gen es, neue Sachen zu entdecken! St&auml;ndig informieren und orientieren wir uns neu, um die neusten Technologien auf dem Markt anbieten zu k&ouml;nnen. Da wir noch in der Lehre sind, k&ouml;nnen wir Ihnen beste Leistung zu sehr attraktiven Preisen anbieten."
+    "heading": "Über das Start-Up",
+    "text": "TBME Labs ist ein Web Design und Entwicklungs Start-Up, geführt von zwei Informatiklernenden. Wir mögen es, neue Sachen zu entdecken! Ständig informieren und orientieren wir uns neu, um die neusten Technologien auf dem Markt anbieten zu können. Da wir noch in der Lehre sind, können wir Ihnen beste Leistung zu sehr attraktiven Preisen anbieten."
   },
   "services": {
     "heading": "Service",
@@ -27,7 +27,7 @@
       {
         "icon": "rocket",
         "heading": "Alles in einem",
-        "text": "Design, Entwicklung, Hosting und Support: Bei uns haben Sie alle M&ouml;glichkeiten offen."
+        "text": "Design, Entwicklung, Hosting und Support: Bei uns haben Sie alle Möglichkeiten offen."
       },
       {
         "icon": "road",
@@ -37,7 +37,7 @@
       {
         "icon": "heart",
         "heading": "Mit Liebe entwickelt",
-        "text": "All unsere Webseiten sind einzigartig und an die W&uuml;nsche der Kunden angepasst."
+        "text": "All unsere Webseiten sind einzigartig und an die Wünsche der Kunden angepasst."
       }
     ]
   },
@@ -60,7 +60,7 @@
     ]
   },
   "openSourceProjects": {
-    "heading": "Unsere Open-Sourced Projekte k&ouml;nnen auf GitHub gefunden werden!",
+    "heading": "Unsere Open-Sourced Projekte können auf GitHub gefunden werden!",
     "linkText": "Sehen Sie sich die GitHub Projekte an"
   },
   "team": {

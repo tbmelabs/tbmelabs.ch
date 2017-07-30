@@ -3,7 +3,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import {bindActionCreators}from 'redux';
 import {connect} from 'react-redux';
+
+import {setCurrentLanguage} from '../actions/languageActions';
 
 import Header from '../components/Header';
 import Navigation from '../components/Navigation';
@@ -20,10 +23,11 @@ require('../styles/tbmelabs.css');
 class Home extends React.Component {
   render() {
     const {texts} = this.props;
+    const {switchLanguage} = this.props.actions;
 
     return (
       <app>
-        <Navigation texts={texts}/>
+        <Navigation texts={texts} switchLanguage={switchLanguage}/>
         <Header texts={texts}/>
 
         <About texts={texts}/>
@@ -41,6 +45,7 @@ class Home extends React.Component {
 
 Home.propTypes = {
   texts: PropTypes.object.isRequired,
+  actions: PropTypes.object.isRequired
 }
 
 Home.contextTypes = {
@@ -56,7 +61,7 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
   return {
     actions: {
-      // Map redux-actions here
+      switchLanguage: bindActionCreators(setCurrentLanguage, dispatch)
     }
   }
 }
