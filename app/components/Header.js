@@ -31,7 +31,7 @@ class Header extends React.Component {
 
     return (
       <ScrollableAnchor id='page-top'>
-        <header className='text-center'>
+        <header>
           <div id='header-content'>
             <PageHeader>TBME Labs</PageHeader>
             <p>

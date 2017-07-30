@@ -16,7 +16,7 @@ class Footer extends React.Component {
         <div className='container'>
           <Grid>
             <Row>
-              <Col lg={12} className='text-center'>
+              <Col lg={12}>
                 Copyright &copy; TBME Labs 2017
               </Col>
             </Row>

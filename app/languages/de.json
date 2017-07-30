@@ -83,5 +83,9 @@
   "contact": {
     "heading": "Nehmen Sie Kontakt mit uns auf!",
     "text": "Bereit mit uns durchzustarten? Super! Senden Sie uns eine E-Mail und wir melden uns so bald als möglich bei Ihnen. Sie finden uns auch in den sozialen Medien!"
+  },
+  "cookieWarning": {
+    "text": "Warnung: Diese Seite benutzt Cookies um die Benutzererfahrung zu verbessern. Durch die Nutzung dieser Webseite akzeptieren Sie diese Verwendung.",
+    "accept": "Akzeptieren"
   }
 }

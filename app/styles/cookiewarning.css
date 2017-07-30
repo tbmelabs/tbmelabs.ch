@@ -1,0 +1,11 @@
+cookiewarning {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1% 0 1% 0;
+}
+
+cookiewarning button {
+  margin-left: 10%;
+}

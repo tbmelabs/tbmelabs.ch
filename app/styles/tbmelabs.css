@@ -59,13 +59,14 @@ a:hover {
 }
 
 /*Each second section is annotated as "light" section. Those sections have a different styling.*/
-.section-light, .aside-light {
+/*Cookie-Warning is a light section too!*/
+.section-light, .aside-light, cookiewarning {
   color: rgba(90, 129, 168, 1);
   background-color: rgba(198, 208, 219, 1);
 }
 
 /*"light" buttons.*/
-.section-light .btn-default, .aside-light .btn-default {
+.section-light .btn-default, .aside-light .btn-default, cookiewarning .btn-default {
   color: rgba(241, 183, 136, 1);
   background-color: rgba(90, 129, 168, 1);
   border-color: rgba(69, 74, 91, 1);

@@ -16,6 +16,7 @@ import Portfolio from '../components/sections/Portfolio';
 import OpenSourceProjects from '../components/asides/OpenSourceProjects';
 import Team from '../components/sections/Team';
 import Contact from '../components/sections/Contact';
+import CookieWarning from "../components/overlays/CookieWarning";
 import Footer from '../components/Footer';
 
 require('../styles/tbmelabs.css');
@@ -36,6 +37,8 @@ class Home extends React.Component {
         <OpenSourceProjects texts={texts}/>
         <Team texts={texts}/>
         <Contact texts={texts}/>
+
+        <CookieWarning texts={texts}/>
 
         <Footer/>
       </app>
