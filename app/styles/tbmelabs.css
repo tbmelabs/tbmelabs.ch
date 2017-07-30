@@ -5,15 +5,20 @@ body {
 }
 
 /*Navbar style. Generally adapting to the body style.*/
-.navbar {
+.navbar, .navbar .dropdown-menu {
   background-color: rgba(69, 74, 91, 0.8);
-  border-bottom-color: rgba(69, 74, 91, 1);
+  border-color: rgba(69, 74, 91, 1);
 }
 
 .navbar a {
   color: rgba(241, 183, 136, 1) !important;
 }
 
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus {
+  background-color: transparent;
+}
+
+/*TODO: Add class on scrolling.*/
 .navbar-scrolled {
   background-color: rgba(69, 74, 91, 1);
 }
