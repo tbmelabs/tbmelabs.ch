@@ -15,9 +15,18 @@
 <!-- Load main React.js file -->
 <div id="app"/>
 
-<div id="enable-script-div">
-  <p>Please enable JavaScript to use this site.</p>
-</div>
+<!-- Warn use if JavaScript is disabled -->
+<noscript>
+  <style type="text/css">
+    #app {
+      display: none;
+    }
+  </style>
+
+  <div id="javascript-disabled-warning">
+    Please enable JavaScript to use this application.
+  </div>
+</noscript>
 
 <script src="public/bundle.js" type="text/javascript"></script>
 </body>
