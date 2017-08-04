@@ -22,6 +22,18 @@ import Footer from '../components/Footer';
 require('../styles/tbmelabs.css');
 
 class Home extends React.Component {
+  componentDidMount() {
+    const progressBar = document.getElementById('ipl-progress-indicator')
+    if (progressBar) {
+      setTimeout(() => {
+        progressBar.classList.add('available')
+        setTimeout(() => {
+          progressBar.outerHTML = ''
+        }, 2000)
+      }, 1000)
+    }
+  }
+
   render() {
     const {texts,} = this.props;
     const {switchLanguage} = this.props.actions;
