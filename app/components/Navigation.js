@@ -40,7 +40,6 @@ class Navigation extends React.Component {
 
     return (
       <navigation>
-        {/*<Navbar collapseOnSelect fixedTop className={this.state.isScrolling ? 'navbar-scrolled' : null}>*/}
         <Navbar collapseOnSelect fixedTop>
           <Navbar.Header>
             <Navbar.Brand>

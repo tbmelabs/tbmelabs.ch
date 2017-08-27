@@ -5,8 +5,6 @@ import PropTypes from 'prop-types';
 
 import ScrollableAnchor, {goToAnchor} from 'react-scrollable-anchor';
 
-import Section from './common/Section';
-
 import PageHeader from 'react-bootstrap/lib/PageHeader';
 import Button from 'react-bootstrap/lib/Button';
 

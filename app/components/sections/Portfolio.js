@@ -4,6 +4,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import getRandomElementsFromArray from '../../utils/getRandomElementsFromArray';
+import loadFile from '../../utils/loadFile';
 
 import Section from '../common/Section';
 import FadeInOnScroll from '../common/FadeInOnScroll';
@@ -48,7 +49,7 @@ class Portfolio extends React.Component {
                   <Col lg={4} md={6} sm={12} key={iterator}>
                     <FadeInOnScroll duration={(iterator + 1) * 2000}>
                       <a href={example.link} target='_blank'>
-                        <Image src={require('../../images/' + example.thumbnail)} thumbnail
+                        <Image src={loadFile(require('../../images/' + example.thumbnail))} thumbnail
                                responsive/>
                       </a>
                     </FadeInOnScroll>

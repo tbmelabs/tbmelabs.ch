@@ -31,7 +31,7 @@ var config = {
       loader: "style-loader!css-loader!less-loader"
     }, {
       test: /\.(jpe?g|png|svg)$/,
-      loader: "file-loader?name=public/[hash].[ext]"
+      loader: "file-loader"
     }, {
       test: /\.(woff|woff2|eot|ttf)$/,
       loader: 'url-loader?limit=100000'
