@@ -3,8 +3,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import loadFile from '../../utils/loadFile';
-
 import Section from '../common/Section';
 import FadeInOnScroll from '../common/FadeInOnScroll';
 
@@ -38,7 +36,7 @@ class Team extends React.Component {
                   <Col lg={6} key={member.name}>
                     <FadeInOnScroll duration={(iterator + 1) * 2000}>
                       <div>
-                        <Image src={loadFile(require('../../images/' + member.thumbnail))} circle/>
+                        <Image src={require('../../images/' + member.thumbnail)} circle/>
                         <h4>{member.name}</h4>
                         <p>{member.title}</p>
                         <ul className='list-inline'>

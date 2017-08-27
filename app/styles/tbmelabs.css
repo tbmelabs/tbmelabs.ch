@@ -18,7 +18,6 @@ body {
   background-color: transparent;
 }
 
-/*TODO: Add class on scrolling.*/
 .navbar-scrolled {
   background-color: rgba(69, 74, 91, 1);
 }
