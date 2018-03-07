@@ -1,6 +1,6 @@
 footer {
-  top: 100%;
+  top: 100vh;
   position: relative;
   text-align: center;
-  padding: 1% 0 1% 0;
+  padding: 1vh 0 1vh 0;
 }

@@ -40,5 +40,3 @@ class App extends React.Component {
 }
 
 render(<App/>, document.getElementById('app'));
-
-document.getElementById('enable-script-div').remove();

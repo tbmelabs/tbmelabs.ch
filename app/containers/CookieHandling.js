@@ -44,7 +44,7 @@ CookieHandling.propTypes = {
   language: PropTypes.string.isRequired,
   showCookieWarning: PropTypes.bool.isRequired,
   actions: PropTypes.object.isRequired,
-  cookies: PropTypes.objectOf(Cookies).isRequired
+  cookies: PropTypes.instanceOf(Cookies).isRequired
 }
 
 function mapStateToProps(state) {

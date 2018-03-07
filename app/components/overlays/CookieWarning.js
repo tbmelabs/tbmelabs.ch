@@ -32,15 +32,15 @@ class CookieWarning extends React.Component {
 
     return (
       <cookiewarning>
-        <div className='container'>
+        {/*<div className='container'>*/}
           <Grid>
             <Row>
               <Col lg={12}>
-                {cookieWarning.text} <Button onClick={this.onClick}>{cookieWarning.accept}</Button>
+                {cookieWarning.text}<Button onClick={this.onClick}>{cookieWarning.accept}</Button>
               </Col>
             </Row>
           </Grid>
-        </div>
+        {/*</div>*/}
       </cookiewarning>
     );
   }

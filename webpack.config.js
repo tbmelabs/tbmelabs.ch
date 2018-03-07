@@ -23,7 +23,7 @@ var config = {
         ],
         presets: [
           'react',
-          'es2015'
+          'env'
         ]
       }
     }, {

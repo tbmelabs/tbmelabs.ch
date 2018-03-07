@@ -1,7 +1,0 @@
-Use html-characters for umlauts
-Ä -> &Auml;
-Ö -> &Ouml;
-Ü -> &Uuml;
-ä -> &auml;
-ö -> &ouml;
-ü -> &uuml;

@@ -2,10 +2,6 @@
 
 import React from 'react';
 
-import Grid from 'react-bootstrap/lib/Grid';
-import Row from 'react-bootstrap/lib/Row';
-import Col from 'react-bootstrap/lib/Col';
-
 require('bootstrap/dist/css/bootstrap.css');
 require('../styles/footer.css');
 
@@ -14,13 +10,9 @@ class Footer extends React.Component {
     return (
       <footer>
         <div className='container'>
-          <Grid>
-            <Row>
-              <Col lg={12}>
-                Copyright &copy; TBME Labs 2017
-              </Col>
-            </Row>
-          </Grid>
+          <span id='footer-content'>
+            Copyright &copy; TBME Labs 2018
+          </span>
         </div>
       </footer>
     );
