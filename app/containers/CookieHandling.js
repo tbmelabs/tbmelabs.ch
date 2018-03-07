@@ -3,7 +3,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import {bindActionCreators}from 'redux';
+import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
 import {withCookies, Cookies} from 'react-cookie';
@@ -30,7 +30,7 @@ class CookieHandling extends React.Component {
 
       return null;
     } else {
-      cookies.set('language', language);
+      cookies.set('language', language, {path: '/'});
 
       return (
         <CookieWarning texts={texts} show={showCookieWarning} disableCookieWarning={disableCookieWarning}/>

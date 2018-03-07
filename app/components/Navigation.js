@@ -21,8 +21,28 @@ class Navigation extends React.Component {
   constructor(props) {
     super(props);
 
+    this.state = {
+      isTop: true
+    }
+
+    this.handleScroll = this.handleScroll.bind(this);
     this.onClick = this.onClick.bind(this);
     this.onSelect = this.onSelect.bind(this);
+  }
+
+  componentDidMount() {
+    document.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll(event) {
+    const isTop = window.scrollY < 100;
+    if (isTop !== this.state.isTop) {
+      this.setState({isTop});
+    }
   }
 
   onClick(event) {
@@ -36,11 +56,12 @@ class Navigation extends React.Component {
   }
 
   render() {
+    const {isTop} = this.state;
     const {name, navigation} = this.props.texts;
 
     return (
       <navigation>
-        <Navbar collapseOnSelect fixedTop>
+        <Navbar collapseOnSelect fixedTop className={!isTop ? 'navbar-scrolled' : null}>
           <Navbar.Header>
             <Navbar.Brand>
               <Link onClick={this.onClick} to="#page-top">TBME Labs</Link>
@@ -82,14 +103,15 @@ class Navigation extends React.Component {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-      </navigation >
-    );
-  }
-}
+        <
+        /navigation>
+        );
+        }
+        }
 
-Navigation.propTypes = {
-  texts: PropTypes.object.isRequired,
-  switchLanguage: PropTypes.func.isRequired
-}
+        Navigation.propTypes = {
+        texts: PropTypes.object.isRequired,
+        switchLanguage: PropTypes.func.isRequired
+      }
 
-export default Navigation;
+        export default Navigation;
