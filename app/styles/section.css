@@ -1,0 +1,14 @@
+section {
+  top: 100vh;
+  position: relative;
+  text-align: center;
+  padding: 2vh 0 3vh 0;
+}
+
+hr {
+  max-width: 50px;
+}
+
+section img {
+  margin-bottom: 2vh;
+}
