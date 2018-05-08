@@ -1,0 +1,22 @@
+/*Navbar style. Generally adapting to the body style.*/
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar, .navbar .dropdown-menu {
+  background-color: rgba(69, 74, 91, 0.8);
+  border-color: rgba(69, 74, 91, 1);
+}
+
+.navbar a {
+  color: rgba(241, 183, 136, 1) !important;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus {
+  background-color: transparent;
+}
+
+.navbar-scrolled {
+  background-color: rgba(69, 74, 91, 1);
+  border-bottom: 1px solid rgba(198, 208, 219, 1);
+}

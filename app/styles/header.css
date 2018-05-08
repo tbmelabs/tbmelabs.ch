@@ -1,0 +1,21 @@
+header {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+#header-content {
+  position: relative;
+  width: 100vw;
+  top: 45vh;
+  text-align: center;
+}
+
+#header-content p {
+  padding-bottom: 1vh;
+}
+
+.page-header {
+  border-bottom: none;
+}
