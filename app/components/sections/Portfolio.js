@@ -32,7 +32,7 @@ class Portfolio extends React.Component {
         <Grid>
           <Row>
             <Col lg={12}>
-              <h2>{portfolio.heading}</h2>
+              <h2 className='section-title'>{portfolio.heading}</h2>
             </Col>
           </Row>
           <hr/>

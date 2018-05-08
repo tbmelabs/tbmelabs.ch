@@ -20,7 +20,7 @@ class About extends React.Component {
         <Grid>
           <Row>
             <Col lg={8} lgOffset={2}>
-              <h2>{about.heading}</h2>
+              <h2 className='section-title'>{about.heading}</h2>
             </Col>
           </Row>
           <hr/>

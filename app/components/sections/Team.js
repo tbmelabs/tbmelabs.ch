@@ -25,7 +25,7 @@ class Team extends React.Component {
         <Grid>
           <Row>
             <Col lg={12}>
-              <h2>{team.heading}</h2>
+              <h2 className='section-title'>{team.heading}</h2>
             </Col>
           </Row>
           <hr/>

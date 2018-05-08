@@ -24,7 +24,7 @@ class Contact extends React.Component {
         <Grid>
           <Row>
             <Col lg={8} lgOffset={2}>
-              <h2>{contact.heading}</h2>
+              <h2 className='section-title'>{contact.heading}</h2>
             </Col>
           </Row>
           <hr/>

@@ -24,7 +24,7 @@ class Services extends React.Component {
         <Grid>
           <Row>
             <Col lg={12}>
-              <h2>{services.heading}</h2>
+              <h2 className='section-title'>{services.heading}</h2>
             </Col>
           </Row>
           <hr/>
